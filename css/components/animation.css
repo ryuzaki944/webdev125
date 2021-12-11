@@ -1,0 +1,119 @@
+.animation {
+    padding: 50px 0;
+}
+
+.animation_test {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* animation-name: test1; */
+    /* animation-duration: 5s; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+    /* animation-fill-mode: forwards; */
+    animation: test1 5s infinite alternate linear;
+}
+
+@keyframes test1 {
+    /* from {
+        background-color: red;
+    }
+    to {
+        background-color: green;
+    } */
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: purple;
+    }
+}
+
+.animation_test2 {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 131, 227);
+    cursor: pointer;
+}
+
+.animation_test2:hover {
+    animation: test2 3s infinite alternate linear;
+}
+
+
+@keyframes test2 {
+    from {
+        background-color: rgb( 54, 131, 227);
+        transform: rotate(0deg);
+    }
+    to {
+        background-color: rgb(247, 158, 49);
+        transform: rotate(360deg);
+    }
+}
+
+.pulse {
+    margin:100px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #cca92c;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+  .pulse:hover {
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.9);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.9);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.9);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+
+.animation_test3 {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(78, 238, 25, 0.742);
+}
+
+.animation_test3:hover {
+    animation: test3 0.5s linear alternate forwards;
+}
+
+@keyframes test3 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(100px, -100px);
+    }
+}
