@@ -82,3 +82,23 @@
     align-items: end;
 }
 
+
+
+@media (max-width: 767px) {
+    .meetings {
+        height: 100%;
+    }
+
+    .meetings_content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .meetings_content div {
+        width: 100%;
+    }
+
+    .meetings_content_menu {
+        margin-bottom: 30px;
+    }
+}
